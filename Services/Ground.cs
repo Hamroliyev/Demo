@@ -7,7 +7,7 @@ namespace Demo.Services
         {
             if (order.GetTotal() < 100)
             {
-                return 0;
+                Console.WriteLine("Ground");
             }
 
             return Math.Max(10, order.GetTotalWeight()*1.5);

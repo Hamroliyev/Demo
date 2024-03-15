@@ -7,9 +7,8 @@ namespace Demo.Services
         {
             if (order.GetTotal() < 100)
             {
-                return 0;
+                Console.WriteLine("Air");
             }
-
             return Math.Max(20, order.GetTotalWeight()*3);
         }
 

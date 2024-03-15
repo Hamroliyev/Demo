@@ -6,7 +6,7 @@ namespace Demo.Services
         {
             if (order.GetTotal() < 100)
             {
-                return 0;
+                Console.WriteLine("Sea");
             }
 
             return Math.Max(15, order.GetTotalWeight()*2);

@@ -8,7 +8,10 @@ namespace Demo
     {
         private IList<Product> lineItems;
         private Shipping shipping;
-
+        public Order(IList<Product> products)
+        {
+            lineItems = products;
+        }
         public int GetTotal() => lineItems.Count;
         public double GetTotalWeight() => lineItems.Sum(x => x.Weight);
         public void SetShippingType(Shipping shippingType) => 

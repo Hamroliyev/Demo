@@ -4,7 +4,7 @@ namespace Demo.Services
     {
         public double GetCost(Order order)
         {
-            if (order.GetTotal() < 100)
+            if (order.GetTotal() > 100)
             {
                 return 0;
             }

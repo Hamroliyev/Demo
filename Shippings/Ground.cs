@@ -3,9 +3,10 @@ namespace Demo.Services
 {
     public class Ground : Shipping
     {
+
         public double GetCost(Order order)
         {
-            if (order.GetTotal() < 100)
+            if (order.GetTotal() > 100)
             {
                 return 0;
             }

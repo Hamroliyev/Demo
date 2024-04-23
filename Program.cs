@@ -4,12 +4,12 @@
     {
         public static void Main(string[] args)
         {
-            Mathi mathi= new Mathi();
+            Mathi mathi = new Mathi();
             int xValue = mathi.x;
             Console.WriteLine(xValue);
         }
     }
-    public struct Mathi
+    public class Mathi
     {
         public int x;
     }
